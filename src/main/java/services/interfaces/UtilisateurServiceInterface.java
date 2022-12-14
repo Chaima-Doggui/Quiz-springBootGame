@@ -2,6 +2,8 @@ package services.interfaces;
 
 import java.util.List;
 
+import org.springframework.data.repository.query.Param;
+
 import persistance.entities.Utilisateur;
 
 public interface UtilisateurServiceInterface {
@@ -16,5 +18,8 @@ public interface UtilisateurServiceInterface {
 	Utilisateur getUtilisateur(Integer id);
 
 	List<Utilisateur> getAllUtilisateurs();
+	
+    Utilisateur getUserByLM(String login ,String mdp );
+
 
 }

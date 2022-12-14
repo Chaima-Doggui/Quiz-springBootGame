@@ -52,4 +52,10 @@ public class UtilisateurServiceImp implements UtilisateurServiceInterface {
 
 	}
 
+	@Override
+	public Utilisateur getUserByLM(String login, String mdp) {
+		// TODO Auto-generated method stub
+		return UtilisateurRepository.getUserByLM(login, mdp);
+	}
+
 }
